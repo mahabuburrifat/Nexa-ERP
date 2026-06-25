@@ -18,7 +18,7 @@
 
             .page.active {
                 display: block;
-                background-color: white;     
+                background-color: white; 
             }
     </style>
 
@@ -167,10 +167,10 @@
                     </div>
 
                     <%-- Right container --%>
-                    <div class="col-span-9 ml-3 border border-gray-400 rounded">
+                    <div class="col-span-9 ml-3 border border-gray-400 rounded overflow-y-auto overflow-x-auto">
 
-                        <!-- text list view 1st -->
-                        <div class=" w-full flex-1 overflow-y-auto overflow-x-auto">
+                        <!-- tab list view 1st -->
+                        <div class=" w-full flex-1 ">
                             <div class="tabs  flex">
                                 <div class="tab-wrapper bg-white flex items-center">
                                     <button type="button" data-page="allParts" class="px-4 h-10 whitespace-nowrap">All Parts</button>
@@ -298,7 +298,7 @@
         });
 
         // initial show
-        document.getElementById("increment").classList.add("active");
+        document.getElementById("allParts").classList.add("active");
 
 
     </script>
