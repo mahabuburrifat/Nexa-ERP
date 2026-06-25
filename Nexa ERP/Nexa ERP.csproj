@@ -73,6 +73,7 @@
     <Content Include="GarmentsModule\cuttingDepartment\cuttingTable.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\stylePartsEntry.aspx" />
+    <Content Include="GarmentsModule\cuttingDepartment\stylePartsMapping.aspx" />
     <Content Include="HRMPAYROLL\AllowanceProcess.aspx" />
     <Content Include="HRMPAYROLL\AnnualLeavePaymentPolicy.aspx" />
     <Content Include="HRMPAYROLL\BankAccountEntry.aspx" />
@@ -150,6 +151,13 @@
     </Compile>
     <Compile Include="GarmentsModule\cuttingDepartment\stylePartsEntry.aspx.designer.cs">
       <DependentUpon>stylePartsEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\stylePartsMapping.aspx.cs">
+      <DependentUpon>stylePartsMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\stylePartsMapping.aspx.designer.cs">
+      <DependentUpon>stylePartsMapping.aspx</DependentUpon>
     </Compile>
     <Compile Include="HRMPAYROLL\AllowanceProcess.aspx.cs">
       <DependentUpon>AllowanceProcess.aspx</DependentUpon>
