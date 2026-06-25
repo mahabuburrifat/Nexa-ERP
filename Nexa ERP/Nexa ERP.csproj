@@ -70,7 +70,8 @@
     <Content Include="Edit page\EmployeeEntry.aspx" />
     <Content Include="EMBELLISHMENT\EmbelllishmentBill.aspx" />
     <Content Include="EmployeeDelete.aspx" />
-    <Content Include="Garments Module\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx" />
+    <Content Include="GarmentsModule\cuttingDepartment\cuttingTable.aspx" />
+    <Content Include="GarmentsModule\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx" />
     <Content Include="HRMPAYROLL\AllowanceProcess.aspx" />
     <Content Include="HRMPAYROLL\AnnualLeavePaymentPolicy.aspx" />
     <Content Include="HRMPAYROLL\BankAccountEntry.aspx" />
@@ -128,11 +129,18 @@
     <Compile Include="EmployeeDelete.aspx.designer.cs">
       <DependentUpon>EmployeeDelete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Garments Module\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx.cs">
+    <Compile Include="GarmentsModule\cuttingDepartment\cuttingTable.aspx.cs">
+      <DependentUpon>cuttingTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\cuttingTable.aspx.designer.cs">
+      <DependentUpon>cuttingTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx.cs">
       <DependentUpon>dailyCuttingTargetAndManpowerSet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Garments Module\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx.designer.cs">
+    <Compile Include="GarmentsModule\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx.designer.cs">
       <DependentUpon>dailyCuttingTargetAndManpowerSet.aspx</DependentUpon>
     </Compile>
     <Compile Include="HRMPAYROLL\AllowanceProcess.aspx.cs">
@@ -377,6 +385,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
