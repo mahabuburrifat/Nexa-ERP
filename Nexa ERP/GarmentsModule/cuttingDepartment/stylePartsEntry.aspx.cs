@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Nexa_ERP.Garments_Module.cuttingDepartment
+namespace Nexa_ERP.GarmentsModule.cuttingDepartment
 {
-    public partial class cuttingTable : System.Web.UI.Page
+    public partial class stylePartsEntry : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
