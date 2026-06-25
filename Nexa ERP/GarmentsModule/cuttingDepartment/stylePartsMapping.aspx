@@ -18,7 +18,7 @@
 
             .page.active {
                 display: block;
-                background-color: white;
+                background-color: white;     
             }
     </style>
 
@@ -167,10 +167,10 @@
                     </div>
 
                     <%-- Right container --%>
-                    <div class="col-span-9 ml-3">
+                    <div class="col-span-9 ml-3 border border-gray-400 rounded">
 
                         <!-- text list view 1st -->
-                        <div class="border-t border-gray-400 rounded w-full flex-1 overflow-y-auto overflow-x-auto">
+                        <div class=" w-full flex-1 overflow-y-auto overflow-x-auto">
                             <div class="tabs  flex">
                                 <div class="tab-wrapper bg-white flex items-center">
                                     <button type="button" data-page="allParts" class="px-4 h-10 whitespace-nowrap">All Parts</button>
@@ -199,7 +199,7 @@
                         </div>
 
                         <%-- all parts --%>
-                        <div class="page " id="allParts">
+                        <div class="page active" id="allParts">
                             <div class="p-2 pb-0 mb-4">
                                 dfsgggggggggggg
                             </div>
