@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="flex flex-col gap-0.5 w-full">
                                     <label>Name</label>
-                                    <asp:TextBox ID="txtName" runat="server" ReadOnly="true" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                                    <asp:TextBox ID="txtName" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                                 </div>
                                 <div class="flex items-center gap-6 mt-3">
                                     <div class="flex items-center gap-1">

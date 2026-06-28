@@ -38,11 +38,11 @@
                                 </div>
                                 <div class="flex flex-col gap-0.5 w-full">
                                     <label>Name</label>
-                                    <asp:TextBox ID="txtName" runat="server" ReadOnly="true" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                                    <asp:TextBox ID="txtName" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                                 </div>
                                 <div class="flex flex-col gap-0.5 w-full">
                                     <label>Remarks</label>
-                                    <asp:TextBox ID="txtRemarks" runat="server" ReadOnly="true" TextMode="MultiLine" Rows="3" CssClass="w-full border rounded outline-none border-gray-300 px-2 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                                    <asp:TextBox ID="txtRemarks" runat="server" TextMode="MultiLine" Rows="3" CssClass="w-full border rounded outline-none border-gray-300 px-2 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
