@@ -72,6 +72,7 @@
     <Content Include="EmployeeDelete.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\cuttingTable.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx" />
+    <Content Include="GarmentsModule\cuttingDepartment\fabricsReceiveByCutting.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\fabricsRequisition.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\stylePartsEntry.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\stylePartsMapping.aspx" />
@@ -145,6 +146,13 @@
     </Compile>
     <Compile Include="GarmentsModule\cuttingDepartment\dailyCuttingTargetAndManpowerSet.aspx.designer.cs">
       <DependentUpon>dailyCuttingTargetAndManpowerSet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\fabricsReceiveByCutting.aspx.cs">
+      <DependentUpon>fabricsReceiveByCutting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\fabricsReceiveByCutting.aspx.designer.cs">
+      <DependentUpon>fabricsReceiveByCutting.aspx</DependentUpon>
     </Compile>
     <Compile Include="GarmentsModule\cuttingDepartment\fabricsRequisition.aspx.cs">
       <DependentUpon>fabricsRequisition.aspx</DependentUpon>
