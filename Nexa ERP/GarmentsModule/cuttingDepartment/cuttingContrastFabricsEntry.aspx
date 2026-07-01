@@ -336,7 +336,7 @@
 
                             <asp:Button ID="btnSticker" runat="server" Text="Sticker" CssClass="w-full rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
 
-                            <asp:Button ID="btnOtherBCard" runat="server" Text="Other B. Card" CssClass="w-full rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
+                            <asp:Button ID="btnOtherBCard" runat="server" Text="Other B. Card" CssClass="rounded bg-[#0d6efd] text-white px-2 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
 
                             <asp:Button ID="btnSticker2" runat="server" Text="Sticker 2" CssClass="w-full  rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
 

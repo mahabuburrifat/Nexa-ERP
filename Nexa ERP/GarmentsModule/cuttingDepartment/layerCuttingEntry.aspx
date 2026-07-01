@@ -318,28 +318,28 @@
 
                 <%-- all btn  --%>
                 <div class="grid grid-cols-12 gap-x-12 p-2 border border-gray-400 rounded  mt-3">
-                    <div class="col-span-6">
-                        <div class="grid grid-cols-2 gap-3 items-center">
+                    <div class="col-span-5">
+                        <div class="grid grid-cols-3 gap-3 items-center">
 
-                            <asp:Button ID="btnCuttingProduction" runat="server" Text="Daily Cutting Production" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnDailyCuttingProduction" runat="server" Text="Daily Cut. Pro." CssClass="rounded bg-[#0d6efd] text-white px-2 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
 
-                            <asp:Button ID="btnBundleChart" runat="server" Text="Bundle Chart" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnBundleChart" runat="server" Text="Bundle Chart" CssClass="rounded bg-[#0d6efd] text-white px-2 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
 
-                            <asp:Button ID="btnBundleCard" runat="server" Text="Bundle Card" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnBundleCard" runat="server" Text="Bundle Card" CssClass="rounded bg-[#0d6efd] text-white px-2 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
 
-                            <asp:Button ID="btnSticker" runat="server" Text="Sticker" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnSticker" runat="server" Text="Sticker" CssClass="rounded bg-[#0d6efd] text-white px-2 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
 
-                            <asp:Button ID="btnOtherBCard" runat="server" Text="Other B. Card" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnOtherBCard" runat="server" Text="Other B. Card" CssClass="rounded bg-[#0d6efd] text-white px-2 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
 
-                            <asp:Button ID="btnSticker2" runat="server" Text="Sticker 2" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnSticker2" runat="server" Text="Sticker 2" CssClass="rounded bg-[#0d6efd] text-white px-2 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
 
                         </div>
                     </div>
 
 
                     <%-- all checkbox --%>
-                    <div class="col-span-6">
-                        <div class="grid grid-cols-3 md:grid-cols-2 gap-3 items-center">
+                    <div class="col-span-7">
+                        <div class="grid grid-cols-3 gap-3 items-center">
                             <div class="flex items-center gap-1">
                                 <asp:CheckBox ID="chkRollWise" runat="server" CssClass="cursor-pointer accent-[#198754]" />
                                 <asp:Label for="chkRollWise" AssociatedControlID="chkRollWise" runat="server" Text="Roll Wise" CssClass="cursor-pointer"></asp:Label>
@@ -357,16 +357,16 @@
                                 <asp:Label for="chkRunningShade" AssociatedControlID="chkRunningShade" runat="server" Text="Running Shade" CssClass="cursor-pointer"></asp:Label>
                             </div>
                             <div class="flex items-center gap-1">
-                                <asp:CheckBox ID="chkRollWiseNotRunnig" runat="server" CssClass="cursor-pointer accent-[#198754]" />
-                                <asp:Label for="chkRollWiseNotRunnig" AssociatedControlID="chkRollWiseNotRunnig" runat="server" Text="Roll Wise Not Running" CssClass="cursor-pointer"></asp:Label>
-                            </div>
-                            <div class="flex items-center gap-1">
                                 <asp:CheckBox ID="chkRollWiseRunnig" runat="server" CssClass="cursor-pointer accent-[#198754]" />
                                 <asp:Label for="chkRollWiseRunnig" AssociatedControlID="chkRollWiseRunnig" runat="server" Text="Roll Wise Running" CssClass="cursor-pointer"></asp:Label>
                             </div>
                             <div class="flex items-center gap-1">
                                 <asp:CheckBox ID="chkPageWiseSlot" runat="server" CssClass="cursor-pointer accent-[#198754]" />
                                 <asp:Label for="chkPageWiseSlot" AssociatedControlID="chkPageWiseSlot" runat="server" Text="Page Wise Slot" CssClass="cursor-pointer"></asp:Label>
+                            </div>
+                            <div class="flex items-center gap-1 col-span-2">
+                                <asp:CheckBox ID="chkRollWiseNotRunnig" runat="server" CssClass="cursor-pointer accent-[#198754]" />
+                                <asp:Label for="chkRollWiseNotRunnig" AssociatedControlID="chkRollWiseNotRunnig" runat="server" Text="Roll Wise Not Running" CssClass="cursor-pointer"></asp:Label>
                             </div>
                         </div>
                     </div>
