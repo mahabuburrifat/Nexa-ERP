@@ -11,7 +11,7 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
 {
 
 
-    public partial class layerCuttingEntry
+    public partial class cuttingContrastFabricsEntry
     {
 
         /// <summary>
@@ -222,15 +222,6 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         protected global::System.Web.UI.WebControls.TextBox txtRemarks;
 
         /// <summary>
-        /// chkIsTube control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkIsTube;
-
-        /// <summary>
         /// txtPoNo control.
         /// </summary>
         /// <remarks>
@@ -285,24 +276,6 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         protected global::System.Web.UI.WebControls.TextBox txtGSM;
 
         /// <summary>
-        /// txtLength control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLength;
-
-        /// <summary>
-        /// ddlLength control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlLength;
-
-        /// <summary>
         /// txtWeight control.
         /// </summary>
         /// <remarks>
@@ -321,22 +294,13 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         protected global::System.Web.UI.WebControls.DropDownList ddlShade;
 
         /// <summary>
-        /// txtLayQtyPcs control.
+        /// txtLayQty control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLayQtyPcs;
-
-        /// <summary>
-        /// txtRollBal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRollBal;
+        protected global::System.Web.UI.WebControls.TextBox txtLayQty;
 
         /// <summary>
         /// ddlOrderPlace control.
@@ -355,6 +319,15 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDelivery;
+
+        /// <summary>
+        /// chkIsTube control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkIsTube;
 
         /// <summary>
         /// btnAdd control.
@@ -409,15 +382,6 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListView2;
-
-        /// <summary>
-        /// chkContractCutting control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkContractCutting;
 
         /// <summary>
         /// btnRefreshCuttingRation control.

@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="layerCuttingEntry.aspx.cs" Inherits="Nexa_ERP.GarmentsModule.cuttingDepartment.layerCuttingEntry" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cuttingContrastFabricsEntry.aspx.cs" Inherits="Nexa_ERP.GarmentsModule.cuttingDepartment.cuttingContrastFabricsEntry" %>
 
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Layer Cutting Entry</title>
+    <title>Cutting Contrast Fabrics Entry</title>
 
     <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,7 +16,7 @@
         <div class="max-w-[1320px] w-full m-auto rounded-lg border">
 
             <div class="bg-[#0d6efd] text-white rounded-t-lg px-4 py-2">
-                <p class="text-2xl mb-1">Layer Cutting Entry</p>
+                <p class="text-2xl mb-1">Cutting Contrast Fabrics Entry</p>
                 <p class="">Label</p>
             </div>
 
@@ -27,7 +27,7 @@
                 <div class="grid grid-cols-12 gap-x-3 gap-y-1">
 
                     <div class="flex flex-col gap-0.5 w-full col-span-6">
-                        <label class="whitespace-nowrap">Cutting Entry ID</label>
+                        <label class="whitespace-nowrap">Cutting Fabric Entry ID</label>
                         <asp:TextBox ID="txtCuttingEntryId" runat="server" ReadOnly="true" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                     </div>
 
@@ -120,10 +120,6 @@
                                     <label>Remarks</label>
                                     <asp:TextBox ID="txtRemarks" runat="server" TextMode="MultiLine" Rows="2" CssClass="w-full border rounded outline-none border-gray-300 px-2 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                                 </div>
-                                <div class="flex items-end justify-center gap-1">
-                                    <asp:CheckBox ID="chkIsTube" runat="server" CssClass="cursor-pointer accent-[#198754]" />
-                                    <asp:Label for="chkIsTube" AssociatedControlID="chkIsTube" runat="server" Text="Is Tube" CssClass="cursor-pointer"></asp:Label>
-                                </div>
                             </div>
 
                         </fieldset>
@@ -160,13 +156,6 @@
                                     <label>GSM</label>
                                     <asp:TextBox ID="txtGSM" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                                 </div>
-                                <div class="flex gap-x-0.5 items-end">
-                                    <div class="flex flex-col gap-0.5 w-full">
-                                        <label>Length</label>
-                                        <asp:TextBox ID="txtLength" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
-                                    </div>
-                                    <asp:DropDownList ID="ddlLength" runat="server" CssClass="w-32 border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:DropDownList>
-                                </div>
                                 <div class="flex flex-col gap-0.5 w-full">
                                     <label>Weight</label>
                                     <asp:TextBox ID="txtWeight" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
@@ -176,23 +165,26 @@
                                     <asp:DropDownList ID="ddlShade" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:DropDownList>
                                 </div>
                                 <div class="flex flex-col gap-0.5 w-full">
-                                    <label>Lay Qty (Pcs)</label>
-                                    <asp:TextBox ID="txtLayQtyPcs" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                                    <label>Lay Qty</label>
+                                    <asp:TextBox ID="txtLayQty" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                                 </div>
-                                <div class="flex flex-col gap-0.5 w-full">
-                                    <label>Roll Bal.</label>
-                                    <asp:TextBox ID="txtRollBal" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
-                                </div>
+                                
                                 <div class="flex flex-col gap-0.5 w-full">
                                     <label>Order Place</label>
                                     <asp:DropDownList ID="ddlOrderPlace" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:DropDownList>
                                 </div>
-                                <div class="flex flex-col gap-0.5 w-full col-span-2">
-                                    <label>Delivery</label>
+                                <div class="flex flex-col gap-0.5 w-full">
+                                    <label>Del.</label>
                                     <asp:DropDownList ID="ddlDelivery" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:DropDownList>
                                 </div>
-                                <div class="flex justify-end items-end">
-                                    <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                                <div class="flex justify-between">
+                                    <div class="flex items-end justify-center gap-1">
+                                        <asp:CheckBox ID="chkIsTube" runat="server" CssClass="cursor-pointer accent-[#198754]" />
+                                        <asp:Label for="chkIsTube" AssociatedControlID="chkIsTube" runat="server" Text="Is Tube" CssClass="cursor-pointer"></asp:Label>
+                                    </div>
+                                    <div class="flex justify-end items-end">
+                                        <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                                    </div>
                                 </div>
 
                             </div>
@@ -219,30 +211,33 @@
                 <%-- middle Container --%>
                 <div class="mt-6 grid grid-cols-12 space-x-3">
 
-                    <div class="col-span-2 flex flex-col space-y-2">
-                        <div class="flex space-x-1 items-end">
-                            <div class="flex flex-col gap-0.5 w-full">
-                                <label class="whitespace-nowrap">Employee Id</label>
-                                <asp:TextBox ID="txtEmployeeId" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                    <div class="col-span-4">
+                        <div class="flex flex-col space-y-3">
+
+                            <%-- employee id --%>
+                            <div class="flex flex-col space-y-1">
+                                <div class="flex space-x-1 items-end">
+                                    <div class="flex flex-col gap-0.5 w-full">
+                                        <label class="whitespace-nowrap">Employee Id</label>
+                                        <asp:TextBox ID="txtEmployeeId" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                                    </div>
+                                    <asp:Button ID="btnAdd2" runat="server" Text="Add" CssClass="rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                                </div>
+                                <div class="border border-gray-400 bg-gray-300 rounded w-full h-32 overflow-y-auto overflow-x-auto">
+                                    <asp:ListView ID="ListView2" runat="server"></asp:ListView>
+                                </div>
                             </div>
-                            <asp:Button ID="btnAdd2" runat="server" Text="Add" CssClass="rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
-                        </div>
-                        <div class="border border-gray-400 bg-gray-300 rounded w-full h-64 flex-1 overflow-y-auto overflow-x-auto">
-                            <asp:ListView ID="ListView2" runat="server"></asp:ListView>
-                        </div>
-                    </div>
 
 
-                    <div class="col-span-4 flex flex-col space-y-2 items-center mt-[26px]">
-                        <div class="flex space-x-2">
-                            <div class="flex items-center gap-1">
-                                <asp:CheckBox ID="chkContractCutting" runat="server" CssClass="cursor-pointer accent-[#198754]" />
-                                <asp:Label for="chkContractCutting" AssociatedControlID="chkContractCutting" runat="server" Text="Contact Cut." CssClass="cursor-pointer"></asp:Label>
+                            <%-- refresh cutt ratio btn --%>
+                            <div class="flex flex-col space-y-1 items-center">
+                                <div class="w-full">
+                                    <asp:Button ID="btnRefreshCuttingRation" runat="server" Text="Refresh Cut. Ratio button " CssClass="w-full rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                                </div>
+                                <div class="border border-gray-400 bg-gray-300 rounded w-full h-32 overflow-y-auto overflow-x-auto">
+                                    <asp:GridView ID="GridView2" runat="server"></asp:GridView>
+                                </div>
                             </div>
-                            <asp:Button ID="btnRefreshCuttingRation" runat="server" Text="Refresh Cut. Ratio" CssClass="rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
-                        </div>
-                        <div class="border border-gray-400 bg-gray-300 rounded w-full h-64 flex-1 overflow-y-auto overflow-x-auto">
-                            <asp:GridView ID="GridView2" runat="server"></asp:GridView>
                         </div>
                     </div>
 
@@ -251,7 +246,7 @@
 
                     <%-- search --%>
 
-                    <div class="col-span-6 flex flex-col space-y-2 items-center mt-[26px]">
+                    <div class="col-span-8 flex flex-col space-y-2 items-center mt-[26px]">
 
                         <div class="border border-gray-400 rounded w-full bg-[#2BBBAD] text-white text-center">
                             <asp:Label ID="Label1" runat="server" Text="Search"></asp:Label>
@@ -404,6 +399,7 @@
     </form>
 </body>
 </html>
+
 
 
 
