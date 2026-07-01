@@ -384,6 +384,33 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         protected global::System.Web.UI.WebControls.ListView ListView2;
 
         /// <summary>
+        /// txtPart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPart;
+
+        /// <summary>
+        /// btnAdd3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd3;
+
+        /// <summary>
+        /// ListView5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView ListView5;
+
+        /// <summary>
         /// btnRefreshCuttingRation control.
         /// </summary>
         /// <remarks>
@@ -492,13 +519,13 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// ListView5 control.
+        /// ListView50 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView ListView5;
+        protected global::System.Web.UI.WebControls.ListView ListView50;
 
         /// <summary>
         /// GridView1 control.
@@ -508,15 +535,6 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
-
-        /// <summary>
-        /// btnCuttingProduction control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCuttingProduction;
 
         /// <summary>
         /// btnBundleChart control.
@@ -600,15 +618,6 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         protected global::System.Web.UI.WebControls.CheckBox chkRunningShade;
 
         /// <summary>
-        /// chkRollWiseNotRunnig control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkRollWiseNotRunnig;
-
-        /// <summary>
         /// chkRollWiseRunnig control.
         /// </summary>
         /// <remarks>
@@ -625,6 +634,15 @@ namespace Nexa_ERP.GarmentsModule.cuttingDepartment
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkPageWiseSlot;
+
+        /// <summary>
+        /// chkRollWiseNotRunnig control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkRollWiseNotRunnig;
 
         /// <summary>
         /// btnRefresh control.

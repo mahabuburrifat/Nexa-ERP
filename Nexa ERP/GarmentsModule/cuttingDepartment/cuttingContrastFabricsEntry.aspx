@@ -211,11 +211,11 @@
                 <%-- middle Container --%>
                 <div class="mt-6 grid grid-cols-12 space-x-3">
 
-                    <div class="col-span-4">
-                        <div class="flex flex-col space-y-3">
+                    <div class="col-span-3">
+                        <div class="flex flex-col space-y-3 h-full">
 
                             <%-- employee id --%>
-                            <div class="flex flex-col space-y-1">
+                            <div class="flex flex-col space-y-1 h-full">
                                 <div class="flex space-x-1 items-end">
                                     <div class="flex flex-col gap-0.5 w-full">
                                         <label class="whitespace-nowrap">Employee Id</label>
@@ -223,30 +223,44 @@
                                     </div>
                                     <asp:Button ID="btnAdd2" runat="server" Text="Add" CssClass="rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
                                 </div>
-                                <div class="border border-gray-400 bg-gray-300 rounded w-full h-32 overflow-y-auto overflow-x-auto">
+                                <div class="border border-gray-400 bg-gray-300 rounded w-full flex-1 overflow-y-auto overflow-x-auto">
                                     <asp:ListView ID="ListView2" runat="server"></asp:ListView>
                                 </div>
                             </div>
 
+                            <%-- part --%>
+                            <div class="flex flex-col space-y-1 h-full">
+                                <div class="flex space-x-1 items-end">
+                                    <div class="flex flex-col gap-0.5 w-full">
+                                        <label class="whitespace-nowrap">Part</label>
+                                        <asp:TextBox ID="txtPart" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                                    </div>
+                                    <asp:Button ID="btnAdd3" runat="server" Text="Add" CssClass="rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                                </div>
+                                <div class="border border-gray-400 bg-gray-300 rounded w-full flex-1 overflow-y-auto overflow-x-auto">
+                                    <asp:ListView ID="ListView5" runat="server"></asp:ListView>
+                                </div>
+                            </div>
 
+
+                        </div>
+                    </div>
                             <%-- refresh cutt ratio btn --%>
-                            <div class="flex flex-col space-y-1 items-center">
+                            <div class="flex flex-col space-y-1 items-center col-span-3 mt-[26px]">
                                 <div class="w-full">
                                     <asp:Button ID="btnRefreshCuttingRation" runat="server" Text="Refresh Cut. Ratio button " CssClass="w-full rounded bg-[#0d6efd] text-white px-4 py-0.5 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
                                 </div>
-                                <div class="border border-gray-400 bg-gray-300 rounded w-full h-32 overflow-y-auto overflow-x-auto">
+                                <div class="border border-gray-400 bg-gray-300 rounded w-full flex-1 overflow-y-auto overflow-x-auto">
                                     <asp:GridView ID="GridView2" runat="server"></asp:GridView>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
 
 
 
                     <%-- search --%>
 
-                    <div class="col-span-8 flex flex-col space-y-2 items-center mt-[26px]">
+                    <div class="col-span-6 flex flex-col space-y-2 items-center mt-[26px]">
 
                         <div class="border border-gray-400 rounded w-full bg-[#2BBBAD] text-white text-center">
                             <asp:Label ID="Label1" runat="server" Text="Search"></asp:Label>
@@ -296,7 +310,7 @@
 
                             <div class="col-span-8 p-2 w-full">
                                 <div class="border border-gray-400 bg-gray-300 rounded w-full h-[430px] flex-1 flex-grow overflow-y-auto overflow-x-auto">
-                                    <asp:ListView ID="ListView5" runat="server"></asp:ListView>
+                                    <asp:ListView ID="ListView50" runat="server"></asp:ListView>
                                 </div>
                             </div>
                         </div>
@@ -313,28 +327,26 @@
 
                 <%-- all btn  --%>
                 <div class="grid grid-cols-12 gap-x-12 p-2 border border-gray-400 rounded  mt-3">
-                    <div class="col-span-6">
-                        <div class="grid grid-cols-2 gap-3 items-center">
+                    <div class="col-span-5">
+                        <div class="grid grid-cols-3 gap-3 items-center">
 
-                            <asp:Button ID="btnCuttingProduction" runat="server" Text="Daily Cutting Production" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnBundleChart" runat="server" Text="Bundle Chart" CssClass="w-full rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
 
-                            <asp:Button ID="btnBundleChart" runat="server" Text="Bundle Chart" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnBundleCard" runat="server" Text="Bundle Card" CssClass="w-full rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
 
-                            <asp:Button ID="btnBundleCard" runat="server" Text="Bundle Card" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnSticker" runat="server" Text="Sticker" CssClass="w-full rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
 
-                            <asp:Button ID="btnSticker" runat="server" Text="Sticker" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnOtherBCard" runat="server" Text="Other B. Card" CssClass="w-full rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
 
-                            <asp:Button ID="btnOtherBCard" runat="server" Text="Other B. Card" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
-
-                            <asp:Button ID="btnSticker2" runat="server" Text="Sticker 2" CssClass="rounded bg-[#0d6efd] text-white px-4 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out" />
+                            <asp:Button ID="btnSticker2" runat="server" Text="Sticker 2" CssClass="w-full  rounded bg-[#0d6efd] text-white px-3 py-1 shadow-sm hover:bg-[#0b5ed7] cursor-pointer transition delay-150 duration-300 ease-in-out whitespace-nowrap" />
 
                         </div>
                     </div>
 
 
                     <%-- all checkbox --%>
-                    <div class="col-span-6">
-                        <div class="grid grid-cols-3 md:grid-cols-2 gap-3 items-center">
+                    <div class="col-span-7">
+                        <div class="grid grid-cols-3 gap-3 items-center">
                             <div class="flex items-center gap-1">
                                 <asp:CheckBox ID="chkRollWise" runat="server" CssClass="cursor-pointer accent-[#198754]" />
                                 <asp:Label for="chkRollWise" AssociatedControlID="chkRollWise" runat="server" Text="Roll Wise" CssClass="cursor-pointer"></asp:Label>
@@ -352,16 +364,16 @@
                                 <asp:Label for="chkRunningShade" AssociatedControlID="chkRunningShade" runat="server" Text="Running Shade" CssClass="cursor-pointer"></asp:Label>
                             </div>
                             <div class="flex items-center gap-1">
-                                <asp:CheckBox ID="chkRollWiseNotRunnig" runat="server" CssClass="cursor-pointer accent-[#198754]" />
-                                <asp:Label for="chkRollWiseNotRunnig" AssociatedControlID="chkRollWiseNotRunnig" runat="server" Text="Roll Wise Not Running" CssClass="cursor-pointer"></asp:Label>
-                            </div>
-                            <div class="flex items-center gap-1">
                                 <asp:CheckBox ID="chkRollWiseRunnig" runat="server" CssClass="cursor-pointer accent-[#198754]" />
                                 <asp:Label for="chkRollWiseRunnig" AssociatedControlID="chkRollWiseRunnig" runat="server" Text="Roll Wise Running" CssClass="cursor-pointer"></asp:Label>
                             </div>
                             <div class="flex items-center gap-1">
                                 <asp:CheckBox ID="chkPageWiseSlot" runat="server" CssClass="cursor-pointer accent-[#198754]" />
                                 <asp:Label for="chkPageWiseSlot" AssociatedControlID="chkPageWiseSlot" runat="server" Text="Page Wise Slot" CssClass="cursor-pointer"></asp:Label>
+                            </div>
+                            <div class="flex items-center gap-1 col-span-2">
+                                <asp:CheckBox ID="chkRollWiseNotRunnig" runat="server" CssClass="cursor-pointer accent-[#198754]" />
+                                <asp:Label for="chkRollWiseNotRunnig" AssociatedControlID="chkRollWiseNotRunnig" runat="server" Text="Roll Wise Not Running" CssClass="cursor-pointer"></asp:Label>
                             </div>
                         </div>
                     </div>
