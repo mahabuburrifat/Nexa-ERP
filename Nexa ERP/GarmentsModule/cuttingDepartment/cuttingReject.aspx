@@ -69,7 +69,7 @@
                             <div class="flex flex-col gap-0.5 w-full col-span-2">
                                 <label class="whitespace-nowrap">Remarks</label>
                                 <asp:TextBox ID="txtRemarks" runat="server" TextMode="MultiLine" Rows="2" CssClass="w-full border rounded outline-none border-gray-300 px-2 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
-                        </div>
+                            </div>
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@
                             <div class="flex flex-col space-y-1 h-full">
                                 <div class="flex space-x-1 items-end">
                                     <div class="flex flex-col gap-0.5 w-full">
-                                        <label class="whitespace-nowrap">Employee Id</label>
+                                        <label class="whitespace-nowrap">Reject Type</label>
                                         <asp:TextBox ID="txtEmployeeId" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                                     </div>
                                     <div class="flex flex-col gap-0.5 w-full">
@@ -94,26 +94,26 @@
                                 <div class="border border-gray-400 bg-gray-300 rounded w-full flex-1 overflow-y-auto overflow-x-auto">
                                     <asp:GridView ID="GridView2" runat="server"></asp:GridView>
                                 </div>
-                                    <div class="flex flex-col gap-0.5 w-full">
-                                        <label class="whitespace-nowrap">Total Reject</label>
-                                        <asp:TextBox ID="txtTotalReject" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
-                                    </div>
+                                <div class="flex flex-col gap-0.5 w-full">
+                                    <label class="whitespace-nowrap">Total Reject</label>
+                                    <asp:TextBox ID="txtTotalReject" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
                     <%-- right list view --%>
-                    
-                        <div class="col-span-4 pt-6 h-full flex flex-col">
-                            <div class="border border-gray-400 bg-gray-300 rounded w-full  flex-1 overflow-y-auto overflow-x-auto">
-                                <asp:ListView ID="ListView50" runat="server"></asp:ListView>
-                            </div>
+
+                    <div class="col-span-4 pt-6 h-full flex flex-col">
+                        <div class="border border-gray-400 bg-gray-300 rounded w-full  flex-1 overflow-y-auto overflow-x-auto">
+                            <asp:ListView ID="ListView50" runat="server"></asp:ListView>
                         </div>
-                    
+                    </div>
+
                 </div>
 
-                
+
                 <%-- total grid view --%>
                 <div class="border border-gray-400 bg-gray-300 rounded w-full h-80 overflow-y-auto overflow-x-auto mt-2 mb-1">
                     <asp:GridView ID="GridView1" runat="server"></asp:GridView>
