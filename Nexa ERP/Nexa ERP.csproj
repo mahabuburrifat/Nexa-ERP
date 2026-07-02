@@ -77,6 +77,7 @@
     <Content Include="GarmentsModule\cuttingDepartment\fabricsReceiveByCutting.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\fabricsRequisition.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\layerCuttingEntry.aspx" />
+    <Content Include="GarmentsModule\cuttingDepartment\pieceCuttingEntry.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\stylePartsEntry.aspx" />
     <Content Include="GarmentsModule\cuttingDepartment\stylePartsMapping.aspx" />
     <Content Include="HRMPAYROLL\AllowanceProcess.aspx" />
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="GarmentsModule\cuttingDepartment\layerCuttingEntry.aspx.designer.cs">
       <DependentUpon>layerCuttingEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\pieceCuttingEntry.aspx.cs">
+      <DependentUpon>pieceCuttingEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GarmentsModule\cuttingDepartment\pieceCuttingEntry.aspx.designer.cs">
+      <DependentUpon>pieceCuttingEntry.aspx</DependentUpon>
     </Compile>
     <Compile Include="GarmentsModule\cuttingDepartment\stylePartsEntry.aspx.cs">
       <DependentUpon>stylePartsEntry.aspx</DependentUpon>
