@@ -24,9 +24,9 @@
                 <asp:HiddenField ID="hfUserId" runat="server" />
 
                 <%-- main container --%>
-                <div class="grid grid-cols-12 gap-x-3 gap-y-1">
+                <div class="grid grid-cols-12 gap-y-1">
 
-                    <div class="flex flex-col gap-0.5 w-full col-span-6">
+                    <div class="flex flex-col gap-0.5 w-full col-span-4">
                         <label class="whitespace-nowrap">Piece Cutting ID</label>
                         <asp:TextBox ID="txtPieceCuttingId" runat="server" ReadOnly="true" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
                     </div>
