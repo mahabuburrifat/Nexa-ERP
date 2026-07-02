@@ -175,10 +175,10 @@
                         <div class="grid grid-cols-12 border border-gray-400 rounded w-full">
 
                             <div class="col-span-4 w-full p-2">
-                                    <div class="flex flex-col gap-0.5 w-full">
-                                        <label class="whitespace-nowrap">Search Type</label>
-                                        <asp:DropDownList ID="ddlSearchType" runat="server" CssClass="border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:DropDownList>
-                                    </div>
+                                <div class="flex flex-col gap-0.5 w-full">
+                                    <label class="whitespace-nowrap">Search Type</label>
+                                    <asp:DropDownList ID="ddlSearchType" runat="server" CssClass="border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:DropDownList>
+                                </div>
                             </div>
 
                             <div class="col-span-8 p-2 w-full">
@@ -200,9 +200,9 @@
 
                 <%-- total input --%>
                 <div class="flex flex-col gap-0.5 w-full">
-    <label>Total Cutting Qty</label>
-    <asp:TextBox ID="txtTotalCuttingQty" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
-</div>
+                    <label>Total Cutting Qty</label>
+                    <asp:TextBox ID="txtTotalCuttingQty" runat="server" CssClass="w-full border rounded outline-none border-gray-300 px-2 h-7 focus:border-blue-500 shadow-sm transition delay-150 duration-150 ease-in-out"></asp:TextBox>
+                </div>
 
                 <!--below  btn -->
                 <div class="space-x-4 flex justify-between items-center mt-3">
