@@ -33,11 +33,11 @@
 
                 </div>
 
-                <div class="grid grid-cols-12 space-x-3 mt-2">
+                <div class="grid grid-cols-12 space-x-3 mt-2 h-full">
 
                     <%-- Master info --%>
                     <div class="col-span-4">
-                        <fieldset class="border border-gray-400 rounded w-full p-2">
+                        <fieldset class="border border-gray-400 rounded w-full p-2 flex flex-1 h-full">
                             <legend class="italic text-sm px-2 font-medium">Master Info</legend>
 
                             <div class="grid grid-cols-2 gap-x-2 gap-y-1 w-full">
